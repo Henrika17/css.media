@@ -1,0 +1,56 @@
+.yes{
+	display: grid;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "feature feature feature feat feat feat"
+    "notgrid notgrid item item idk idk";
+
+padding-left: 20%;
+padding-right: 20%;
+
+    
+}
+.feature {
+	grid-area: feature;
+	background-color: #ffccdd;
+	height: 80px;
+
+}
+.feat { 
+	grid-area: feat;
+	background-color: #4d4dff;
+}
+.notgrid { 
+	grid-area: notgrid;
+	background-color: #d65cad;
+}
+.item { 
+	grid-area: item;
+	background-color: #b3e6ff;
+}
+.idk {
+	grid-area: idk;
+	background-color: #ccffff;
+}
+
+
+@media screen and (max-width: 600px) {
+	.yes {
+	display: grid;
+ 	grid-template-columns: 1fr;
+  	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  	grid-template-areas:
+    "feature"
+    "feat"
+    "notgrid"
+    "item"
+    "idk";
+	}
+	.feature {
+		height: 50px;
+		width: 300px;
+	}
+
+}
